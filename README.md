@@ -13,6 +13,8 @@ This project is an interactive solar system simulation that allows users to expl
 - Adjustable animation speed
 - Responsive design that works on various screen sizes
 
+![Solar System Simulation](img.png)
+
 ## Files
 
 - `index.html`: The main HTML file that sets up the structure of the web page
