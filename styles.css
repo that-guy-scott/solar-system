@@ -1,0 +1,100 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Space Mono', monospace;
+  background-color: #0a0a1e;
+  color: #e0e0ff;
+}
+
+canvas {
+  display: block;
+}
+
+#controls {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(10, 10, 30, 0.8);
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 20px rgba(100, 100, 255, 0.3);
+  border: 1px solid rgba(100, 100, 255, 0.5);
+}
+
+#speedSlider {
+  width: 200px;
+  margin: 0 10px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+#speedValue {
+  min-width: 30px;
+  text-align: right;
+}
+
+#tooltip {
+  position: absolute;
+  background: rgba(10, 10, 30, 0.9);
+  color: #e0e0ff;
+  padding: 20px;
+  border-radius: 10px;
+  display: none;
+  max-width: 300px;
+  box-shadow: 0 0 20px rgba(100, 100, 255, 0.3);
+  border: 1px solid rgba(100, 100, 255, 0.5);
+}
+
+#tooltip h3 {
+  margin-top: 0;
+  color: #ffcc00;
+  font-size: 1.4em;
+  border-bottom: 1px solid rgba(100, 100, 255, 0.5);
+  padding-bottom: 10px;
+  padding-right: 30px;
+}
+
+#tooltip h4 {
+  color: #66ccff;
+  margin-bottom: 5px;
+}
+
+#tooltip ul {
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+#tooltip li {
+  margin-bottom: 5px;
+}
+
+#tooltip button {
+  background: #66ccff;
+  color: #0a0a1e;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Space Mono', monospace;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+#tooltip button:hover {
+  background: #ffcc00;
+}
+
+#dragHandle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: move;
+  color: #66ccff;
+  font-size: 1.2em;
+}
